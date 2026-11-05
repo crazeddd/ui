@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [solid(), dts({ include: ['src/lib'] })],
   build: {
     lib: {
-      entry: 'src/lib/index.ts',
+      entry: 'src/index.ts',
       formats: ['es'],
       fileName: 'index',
       cssFileName: 'styles',

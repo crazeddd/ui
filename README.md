@@ -32,6 +32,6 @@ export function Example() {
 }
 ```
 
-The initial public components are `Button`, `Input`, and `Card`. Shared design tokens live in `src/styles.css`, so consumers can override the CSS variables without adopting a utility framework.
+The public components are `Button`, `Input`, `Textarea`, `Select`, `Checkbox`, `Badge`, `Card`, `Toast`, `Accordion`, `Modal`, and `Carousel`. Shared design tokens live in `src/styles.css`, so consumers can override the CSS variables without adopting a utility framework.
 
 The stylesheet also includes a small internal spacing layer based on the reference scale: `--space-1` through `--space-7` map to `0.25rem`, `0.5rem`, `0.75rem`, `1rem`, `1.25rem`, `2rem`, and `4rem`. CSS utilities such as `gp-1`, `pd-1`, and `mg-1` are available to the library surface but are intentionally not JavaScript exports.

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 :root {
-    --color-canvas: oklch(14.479% 0.00002 271.152);
+    --color-background: oklch(14.479% 0.00002 271.152);
     --color-surface: #1c1e1e;
     --color-surface-accent: #10002b;
     --color-surface-muted: oklch(18.425% 0.00433 308.037);

@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from 'storybook-solidjs-vite'
-import { Input } from './Input'
+import { Input } from '../components/Input'
 
 const meta = { title: 'Components/Input', component: Input, args: { label: 'Project name', placeholder: 'moonlit-dashboard' } } satisfies Meta<typeof Input>
 export default meta

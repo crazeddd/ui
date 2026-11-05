@@ -3,7 +3,7 @@
 :root {
     font-family: var(--font-body);
     color: var(--color-ink);
-    background: var(--color-canvas);
+    background: var(--color-background);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -93,6 +93,110 @@ h2 {
 .showcase__footer {
     display: flex;
     align-items: center;
+}
+
+.gallery {
+    width: min(calc(100% - var(--space-7) * 2), 1100px);
+    margin: 0 auto;
+    padding: var(--space-7) 0;
+}
+
+.gallery__header,
+.gallery__card-heading,
+.gallery__row {
+    display: flex;
+    align-items: center;
+}
+
+.gallery__header {
+    justify-content: space-between;
+    gap: var(--space-6);
+    margin-bottom: var(--space-7);
+}
+
+.gallery__header h1 {
+    margin-bottom: var(--space-3);
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+}
+
+.gallery__header .lede {
+    max-width: 560px;
+}
+
+.gallery__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6);
+}
+
+.gallery__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    min-width: 0;
+    padding: var(--space-6);
+}
+
+.gallery__card--wide {
+    grid-column: span 2;
+}
+
+.gallery__card-heading {
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.gallery__card-heading h2 {
+    font-size: 1.35rem;
+}
+
+.gallery__row {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+}
+
+.gallery__stack {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.gallery__slide {
+    display: flex;
+    min-height: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-6);
+    background: var(--color-surface-accent);
+}
+
+.gallery__slide strong {
+    color: var(--color-accent);
+    font-family: var(--font-display);
+    font-size: 2rem;
+}
+
+@media (max-width: 760px) {
+    .gallery {
+        width: min(calc(100% - var(--space-6) * 2), 560px);
+        padding: var(--space-6) 0;
+    }
+
+    .gallery__header {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: var(--space-6);
+    }
+
+    .gallery__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery__card--wide {
+        grid-column: auto;
+    }
 }
 
 .showcase__panel-heading {
