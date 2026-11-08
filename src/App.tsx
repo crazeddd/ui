@@ -44,7 +44,7 @@ function App() {
           <div class="gallery__row">
             <Button>Primary</Button>
             <Button variant="secondary">Secondary</Button>
-            <Button variant="outline">Outline</Button>
+            <Button variant="outline" loading>Outline</Button>
             <Button variant="danger">Danger</Button>
             <Button variant="safe">Safe</Button>
           </div>

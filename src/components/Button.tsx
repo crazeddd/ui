@@ -1,4 +1,5 @@
 import { splitProps, type Component, type JSX } from "solid-js";
+import Spinner from "./Spinner";
 
 export type ButtonVariant =
   "primary" | "secondary" | "outline" | "danger" | "safe";
@@ -26,7 +27,7 @@ export const Button: Component<ButtonProps> = (props) => {
       disabled={local.loading || buttonProps.disabled}
       aria-busy={local.loading ? "true" : undefined}
     >
-      {local.loading ? "Loading..." : local.children}
+      {local.loading ? <Spinner /> : local.children}
     </button>
   );
 };
