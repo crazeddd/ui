@@ -33,7 +33,7 @@
 
 .ui-button:disabled {
     cursor: disabled;
-    opacity: 0.55;
+    /* opacity: 0.55; */
 }
 
 .ui-button--sm {
@@ -76,7 +76,7 @@
 
 .ui-button--safe {
     color: #071b12;
-    background: var(--color-success);
+    background: var(--color-safe);
 }
 
 .ui-button--safe:hover:not(:disabled) {

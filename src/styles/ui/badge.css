@@ -25,5 +25,5 @@
 }
 .ui-badge--safe {
   color: #071b12;
-  background: var(--color-success);
+  background: var(--color-safe);
 }

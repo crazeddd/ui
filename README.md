@@ -1,6 +1,15 @@
 # @crazeddd/ui
 
-An extremely opinionated SolidJS component library that also comes with a full CSS util library.
+My UI Library, built with SolidJs and Font Awesome.
+
+Comes with premade components and a CSS util library.
+
+## Todo
+- [ ] Add Graphs with GraphJs
+- [ ] Add Data Tables and Charts
+- [ ] Navbar?
+- [ ] Progress Bar
+- [ ] Slider
 
 
 ## Development
@@ -32,3 +41,7 @@ export function Example() {
   return <Button variant="secondary">Save</Button>;
 }
 ```
+
+## Websites Using This UI
+
+- [Kibi Host](https://kibihost.com)

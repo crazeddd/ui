@@ -133,8 +133,8 @@
 }
 
 .ui-checkbox__control:checked+.ui-checkbox__box {
-    border-color: var(--color-success);
-    background: var(--color-success);
+    border-color: var(--color-safe);
+    background: var(--color-safe);
 }
 
 .ui-checkbox__control:checked+.ui-checkbox__box .ui-icon {

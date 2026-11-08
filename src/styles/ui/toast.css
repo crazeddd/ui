@@ -44,7 +44,7 @@
   color: var(--color-danger);
 }
 .ui-toast--safe .ui-toast__header-content {
-  color: var(--color-success);
+  color: var(--color-safe);
 }
 .ui-toast__dismiss {
   align-self: flex-start;

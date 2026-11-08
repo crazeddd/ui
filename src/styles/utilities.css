@@ -1,24 +1,31 @@
 .gp-0 {
   gap: var(--space-0);
 }
+
 .gp-1 {
   gap: var(--space-1);
 }
+
 .gp-2 {
   gap: var(--space-2);
 }
+
 .gp-3 {
   gap: var(--space-3);
 }
+
 .gp-4 {
   gap: var(--space-4);
 }
+
 .gp-5 {
   gap: var(--space-5);
 }
+
 .gp-6 {
   gap: var(--space-6);
 }
+
 .gp-7 {
   gap: var(--space-7);
 }
@@ -26,24 +33,31 @@
 .pd-0 {
   padding: var(--space-0);
 }
+
 .pd-1 {
   padding: var(--space-1);
 }
+
 .pd-2 {
   padding: var(--space-2);
 }
+
 .pd-3 {
   padding: var(--space-3);
 }
+
 .pd-4 {
   padding: var(--space-4);
 }
+
 .pd-5 {
   padding: var(--space-5);
 }
+
 .pd-6 {
   padding: var(--space-6);
 }
+
 .pd-7 {
   padding: var(--space-7);
 }
@@ -51,24 +65,31 @@
 .mg-0 {
   margin: var(--space-0);
 }
+
 .mg-1 {
   margin: var(--space-1);
 }
+
 .mg-2 {
   margin: var(--space-2);
 }
+
 .mg-3 {
   margin: var(--space-3);
 }
+
 .mg-4 {
   margin: var(--space-4);
 }
+
 .mg-5 {
   margin: var(--space-5);
 }
+
 .mg-6 {
   margin: var(--space-6);
 }
+
 .mg-7 {
   margin: var(--space-7);
 }
@@ -76,42 +97,55 @@
 .pd-x-1 {
   padding-inline: var(--space-1);
 }
+
 .pd-x-2 {
   padding-inline: var(--space-2);
 }
+
 .pd-x-3 {
   padding-inline: var(--space-3);
 }
+
 .pd-x-4 {
   padding-inline: var(--space-4);
 }
+
 .pd-x-5 {
   padding-inline: var(--space-5);
 }
+
 .pd-x-6 {
   padding-inline: var(--space-6);
 }
+
 .pd-x-7 {
   padding-inline: var(--space-7);
 }
+
 .pd-y-1 {
   padding-block: var(--space-1);
 }
+
 .pd-y-2 {
   padding-block: var(--space-2);
 }
+
 .pd-y-3 {
   padding-block: var(--space-3);
 }
+
 .pd-y-4 {
   padding-block: var(--space-4);
 }
+
 .pd-y-5 {
   padding-block: var(--space-5);
 }
+
 .pd-y-6 {
   padding-block: var(--space-6);
 }
+
 .pd-y-7 {
   padding-block: var(--space-7);
 }
@@ -119,6 +153,222 @@
 .mg-x-auto {
   margin-inline: auto;
 }
+
 .mg-y-auto {
   margin-block: auto;
+}
+
+/* Widths and heights */
+.w-100 {
+  width: 100%;
+}
+
+.vw-100 {
+  width: 100vw;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+* Text styles */ .txt-muted {
+  color: var(--txt-dark);
+}
+
+.txt-ul {
+  text-decoration: underline;
+}
+
+.txt-i {
+  font-style: italic;
+}
+
+.txt-h {
+  display: inline-block;
+  padding: 0rem 0.45rem;
+  border-radius: 0.25rem;
+  background: var(--acc-s);
+}
+
+.txt-semibold {
+  font-weight: 600;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
+.txt-default {
+  color: var(--color-ink);
+}
+
+.txt-primary {
+  color: var(--color-accent);
+}
+
+.txt-danger {
+  color: var(--color-danger);
+}
+
+.txt-safe {
+  color: var(--color-safe);
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+/* Flex Stuff */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/*Grid stuff*/
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.col-auto {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.col-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.col-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Backgrounds */
+.bg-primary {
+  background: var(--color-accent);
+}
+
+.bg-secondary {
+  background: var(--color-surface);
+}
+
+.bg-danger {
+  background: var(--color-danger);
+}
+
+.bg-safe {
+  background: var(--color-safe);
+}
+
+.bg-default {
+  background: var(--color-background);
+}
+
+/*Borders*/
+.b-all {
+  border: solid 1px var(--color-border);
+}
+
+.b-none {
+  border: none;
+}
+
+.b-top {
+  border-top: solid 1px var(--color-border);
+}
+
+.b-right {
+  border-right: solid 1px var(--color-border);
+}
+
+.b-bottom {
+  border-bottom: solid 1px var(--color-border);
+}
+
+.b-left {
+  border-left: solid 1px var(--color-border);
+}
+
+.r-1 {
+  border-radius: var(--radius-sm);
+}
+
+.r-2 {
+  border-radius: var(--radius-md);
+}
+
+.r-3 {
+  border-radius: var(--radius-lg);
+}
+
+.r-pill {
+  border-radius: var(--radius-pill);
+}
+
+.r-circle {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+
+/* Z-Index */
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-4 {
+  z-index: 4;
 }

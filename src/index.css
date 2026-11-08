@@ -210,8 +210,8 @@ h2 {
   height: 10px;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: var(--color-success);
-  box-shadow: 0 0 0 5px var(--color-success-soft);
+  background: var(--color-safe);
+  box-shadow: 0 0 0 5px var(--color-safe-soft);
 }
 
 .showcase__form {
