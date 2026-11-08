@@ -1,39 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:opsz,wght@14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:opsz,wght@14..32,100..900&display=swap");
 
 :root {
-    --color-background: oklch(14.479% 0.00002 271.152);
-    --color-surface: #1c1e1e;
-    --color-surface-accent: #10002b;
-    --color-surface-muted: oklch(18.425% 0.00433 308.037);
-    --color-ink-strong: hsl(200 100% 98%);
-    --color-ink: hsla(180 1% 80% / 0.8);
-    --color-ink-muted: hsla(180 1% 80% / 0.62);
-    --color-ink-faint: hsla(180 1% 80% / 0.4);
-    --color-border: oklch(0.35 0 285.58);
-    --color-border-strong: #3d4f5d;
-    --color-accent: #821dff;
-    --color-accent-hover: #9a4dff;
-    --color-accent-contrast: #ffffff;
-    --color-accent-soft: #2b0757;
-    --color-success: #2df598;
-    --color-success-soft: #0c4c32;
-    --color-danger: #fd5656;
-    --color-danger-soft: #531d1d;
-    --color-brand-discord: #7289da;
-    --font-body: 'Inter', sans-serif;
-    --font-display: 'Geist', sans-serif;
-    --space-0: 0;
-    --space-1: 0.25rem;
-    --space-2: 0.5rem;
-    --space-3: 0.75rem;
-    --space-4: 1rem;
-    --space-5: 1.25rem;
-    --space-6: 2rem;
-    --space-7: 4rem;
-    --radius-sm: 0.45rem;
-    --radius-md: 0.5rem;
-    --radius-lg: 0.75rem;
-    --radius-pill: 999px;
-    --shadow-focus: 0 0 5px color-mix(in srgb, var(--color-accent) 50%, transparent);
-    --shadow-card: 0 18px 50px rgba(0, 0, 0, 0.24), 0 2px 6px rgba(0, 0, 0, 0.2);
+  --color-background: oklch(14.479% 0.00002 271.152);
+  --color-surface: #1c1e1e;
+  --color-surface-accent: #10002b;
+  --color-surface-muted: oklch(18.425% 0.00433 308.037);
+  --color-ink-strong: hsl(200 100% 98%);
+  --color-ink: hsla(180 1% 80% / 0.8);
+  --color-ink-muted: hsla(180 1% 80% / 0.62);
+  --color-ink-faint: hsla(180 1% 80% / 0.4);
+  --color-border: oklch(0.35 0 285.58);
+  --color-border-strong: oklch(46.945% 0.00256 16.101);
+  --color-accent: #821dff;
+  --color-accent-hover: #9a4dff;
+  --color-accent-contrast: #ffffff;
+  --color-accent-soft: #2b0757;
+  --color-success: #2df598;
+  --color-success-soft: #0c4c32;
+  --color-danger: #fd5656;
+  --color-danger-soft: #531d1d;
+
+  --color-brand-discord: #7289da;
+
+  --font-body: "Inter", sans-serif;
+  --font-display: "Geist", sans-serif;
+
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 2rem;
+  --space-7: 4rem;
+
+  --radius-sm: 0.45rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-pill: 999px;
+  
+  --shadow-focus: 0 0 5px
+    color-mix(in srgb, var(--color-accent) 50%, transparent);
+  --shadow-card: 0 18px 50px rgba(0, 0, 0, 0.24), 0 2px 6px rgba(0, 0, 0, 0.2);
 }

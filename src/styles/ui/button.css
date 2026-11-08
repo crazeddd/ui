@@ -10,10 +10,15 @@
     color: var(--color-accent-contrast);
     background: var(--color-accent);
     cursor: pointer;
+    font-family: var(--font-display);
     font-size: 0.85rem;
     font-weight: 600;
     text-wrap: nowrap;
-    transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+    transition:
+        background 160ms ease,
+        border-color 160ms ease,
+        color 160ms ease,
+        transform 160ms ease;
 }
 
 .ui-button:hover:not(:disabled) {
@@ -21,7 +26,7 @@
 }
 
 .ui-button:active:not(:disabled) {
-    transform: translateY(1px);
+    transform: translateY(4px);
 }
 
 .ui-button:disabled {
@@ -44,6 +49,7 @@
 .ui-button--secondary {
     color: var(--color-ink-strong);
     background: var(--color-surface);
+    border-color: var(--color-border);
 }
 
 .ui-button--secondary:hover:not(:disabled),
