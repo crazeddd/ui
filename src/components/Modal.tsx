@@ -65,7 +65,7 @@ export const Modal: Component<ModalProps> = (props) => {
                 aria-label="Close dialog"
                 onClick={local.onClose}
               >
-                <Icon icon="xmark" />
+                <Icon icon="xmark" size="lg" />
               </button>
             </header>
             <div class="ui-modal__body">{local.children}</div>

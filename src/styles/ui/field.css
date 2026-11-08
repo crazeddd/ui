@@ -1,7 +1,28 @@
-.ui-input-field {
+/* General */
+
+.ui-input:hover:not(:disabled),
+.ui-select:hover:not(:disabled),
+.ui-textarea:hover:not(:disabled) {
+    border-color: var(--color-border-strong);
+}
+
+.ui-input-field,
+.ui-textarea-field,
+.ui-select-field {
     display: grid;
     gap: var(--space-2);
 }
+
+.ui-input:focus-visible,
+.ui-textarea:focus-visible,
+.ui-select:focus-visible {
+    /* box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.25); */
+    border-color: var(--color-border-strong);
+    outline: 0;
+}
+
+
+/* Input */
 
 .ui-input-label {
     color: var(--color-ink-strong);
@@ -11,6 +32,7 @@
 .ui-input {
     width: 100%;
     min-height: 2rem;
+    max-height: 2rem;
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     padding: var(--space-1) var(--space-3);
@@ -24,15 +46,6 @@
 
 .ui-input::placeholder {
     color: var(--color-ink-faint);
-}
-
-.ui-input:hover:not(:disabled) {
-    border-color: var(--color-border-strong);
-}
-
-.ui-input:focus-visible {
-    border-color: var(--color-accent);
-    box-shadow: var(--shadow-focus);
 }
 
 .ui-input[aria-invalid="true"] {
@@ -55,11 +68,7 @@
     color: var(--color-danger);
 }
 
-.ui-textarea-field,
-.ui-select-field {
-    display: grid;
-    gap: var(--space-2);
-}
+/* Textarea & Select */
 
 .ui-textarea,
 .ui-select {
@@ -70,6 +79,9 @@
     color: var(--color-ink-strong);
     background: var(--color-surface);
     font-size: 0.85rem;
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease;
 }
 
 .ui-textarea {
@@ -77,16 +89,13 @@
     resize: vertical;
 }
 
-.ui-textarea:focus-visible,
-.ui-select:focus-visible {
-    border-color: var(--color-accent);
-    box-shadow: var(--shadow-focus);
-    outline: 0;
-}
-
 .ui-select {
     min-height: 2rem;
+    max-height: 2rem;
 }
+
+
+/* Checkbox */
 
 .ui-checkbox {
     display: inline-flex;

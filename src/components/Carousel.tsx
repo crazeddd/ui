@@ -48,9 +48,9 @@ export const Carousel: Component<CarouselProps> = (props) => {
           disabled={!local.loop && index() === 0}
           aria-label="Previous slide"
         >
-          <Icon icon="arrow-left" />
+          <Icon icon="chevron-left" />
         </button>
-        <span>
+        <span class="ui-carousel__counter">
           {index() + 1} / {local.items.length}
         </span>
         <button
@@ -60,7 +60,7 @@ export const Carousel: Component<CarouselProps> = (props) => {
           disabled={!local.loop && index() === lastIndex()}
           aria-label="Next slide"
         >
-          <Icon icon="arrow-right" />
+          <Icon icon="chevron-right" />
         </button>
       </div>
     </div>

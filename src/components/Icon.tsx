@@ -5,6 +5,11 @@ import {
   faCheck,
   faChevronDown,
   faChevronUp,
+  faChevronLeft,
+  faChevronRight,
+  faCircleCheck,
+  faCircleExclamation,
+  faCircleInfo,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "solid-fontawesome";
@@ -16,7 +21,12 @@ library.add(
   faCheck,
   faChevronDown,
   faChevronUp,
+  faChevronLeft,
+  faChevronRight,
   faXmark,
+  faCircleExclamation,
+  faCircleCheck,
+  faCircleInfo
 );
 
 export type IconName =
@@ -25,7 +35,12 @@ export type IconName =
   | "check"
   | "chevron-down"
   | "chevron-up"
-  | "xmark";
+  | "chevron-left"
+  | "chevron-right"
+  | "xmark"
+  | "circle-exclamation"
+  | "circle-check"
+  | "circle-info";
 export type IconProps = {
   icon: IconName;
   label?: string;
